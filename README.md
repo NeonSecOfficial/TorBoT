@@ -101,14 +101,8 @@ Before you run the torBot make sure the following things are done properly:
 * Run tor service
 `sudo service tor start`
 
-* Set a password for tor
-`tor --hash-password "my_password" `
-
-* Give the password inside torbot.py
-`from stem.control import Controller
-with Controller.from_port(port = 9051) as controller:
- controller.authenticate("your_password_hash")
- controller.signal(Signal.NEWNYM)`
+* Make sure that your torrc is configured to SOCKS_PORT localhost:9050 which should be the 
+  should default setting
 
 `python3 torBot.py`
 <pre>
@@ -147,6 +141,9 @@ GNU Public License
 - [X] [P5N4PPZ](https://github.com/PSNAppz) - Owner
 - [X] [agrepravin](https://github.com/agrepravin) - Contributor,Reviewer
 - [X] [y-mehta](https://github.com/y-mehta) - Contributer
+- [X] [Manfredi Martorana](https://github.com/Agostinelli) - Contributor
+- [X] [KingAkeem](https://github.com/KingAkeem) - Contributor
+
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Opensource.svg/200px-Opensource.svg.png)
 
